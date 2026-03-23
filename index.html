@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Ishita ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --pink: #ff6b81;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #fff0f5, #ffe4ec);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Floating Hearts */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 16px;
+  color: var(--pink);
+  animation: floatUp 8s linear infinite;
+}
+
+@keyframes floatUp {
+  100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+/* HERO */
+.hero {
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.8rem;
+  color: #d63384;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.card {
+  background: rgba(255,255,255,0.7);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.07);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.card p {
+  font-size: 1.1rem;
+  padding: 12px;
+}
+
+/* Reasons */
+.reasons {
+  padding: 60px 20px;
+}
+
+.reason-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.reason {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+}
+
+/* Envelope */
+.envelope {
+  width: 300px;
+  height: 180px;
+  margin: 60px auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.envelope-body {
+  width: 100%;
+  height: 100%;
+  background: var(--pink);
+  border-radius: 10px;
+}
+
+.flap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ff8fa3;
+  clip-path: polygon(0 0,100% 0,50% 60%);
+  transform-origin: top;
+  transition: 0.6s;
+}
+
+.envelope.open .flap {
+  transform: rotateX(180deg);
+}
+
+/* Letter */
+.letter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 110%;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.envelope.open .letter {
+  transform: translate(-50%, -150%) scale(1.1);
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 20px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.yes {
+  background: var(--pink);
+  color: white;
+}
+
+.no {
+  background: #eee;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  background: rgba(0,0,0,0.6);
+}
+
+.popup-content {
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  max-width:380px;
+}
+
+.popup img {
+  width:100%;
+  height:220px;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media(max-width:600px){
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .card img {
+    height: 160px;
+  }
+
+  .envelope {
+    width: 230px;
+    height: 150px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<script>
+// Floating hearts
+for(let i=0;i<20;i++){
+  let h=document.createElement("div");
+  h.className="heart";
+  h.innerHTML="❤️";
+  h.style.left=Math.random()*100+"%";
+  h.style.animationDuration=(5+Math.random()*5)+"s";
+  document.body.appendChild(h);
+}
+</script>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Every Moment With You Means Everything</h1>
+</section>
+
+<!-- Gallery -->
+<div class="gallery">
+  <div class="card"><img src="VillaTrip.jpeg"><p>Our 1st Villa Trip 🏡</p></div>
+  <div class="card"><img src="Trekking.jpeg"><p>Our 1st Trekking ⛰️</p></div>
+  <div class="card"><img src="traditional.jpeg"><p>Our 1st Traditional Day ❤️</p></div>
+  <div class="card"><img src="Holi.jpeg"><p>First Festival 🎉</p></div>
+</div>
+
+<!-- Reasons -->
+<section class="reasons">
+  <h2>Why I Love You ❤️</h2>
+  <div class="reason-grid">
+    <div class="reason">Your smile and eyes 🥺</div>
+    <div class="reason">Your caring nature 💕 [bohot jaldi irritate ho jati hai par]</div>
+    <div class="reason">How you understand me [you don't] [just kidding]</div>
+    <div class="reason">Every little thing about you</div>
+    <div class="reason">Because it's you Ishita</div>
+    <div class="reason">Coz it's you Ghadedi</div>
+  </div>
+</section>
+
+<!-- Envelope -->
+<div class="envelope" onclick="openEnvelope()">
+  <div class="flap"></div>
+  <div class="envelope-body"></div>
+
+  <div class="letter">
+    <h3 style="font-family:'Great Vibes',cursive;">Dear Ishita</h3>
+    <p>
+      I knoow ye thode din tere liye bohot mushkil rahe hai, aur maine bhi thoda zyada hi annoying behavior kiya hai 😔
+      But mai sach mai try kar raha hu change hone ka,
+      Maine bohot kuch kiya hai tere liye and aage bhi karna chahta hu,
+      Muje tujse dur nai hona and muje pta hai mai chee ai kar raha hu tere liye but nai hai aise kar raha hu mai change ho raha hu,
+      Mere side se dekh na yaar mai bhi hu tere liye tu bhi reh mere lye and hum dono better future build karte hai ❤️  
+      <br><br>
+      I’ll try to be less annoying…  
+      (okay maybe 10% less 😭)
+    </p>
+
+    <div class="buttons">
+      <button class="btn yes" onclick="showPopup()">Maaf kiya ❤️</button>
+      <button class="btn no" id="noBtn"
+        onmouseover="funnyHover(this)"
+        onclick="showPopup()">Nahi kiya</button>
+    </div>
+
+    <p style="font-size:0.8rem;margin-top:8px;">
+      *Ignoring me may cause more cringe messages 😭*
+    </p>
+  </div>
+</div>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <img src="special.jpeg">
+    <p>
+      Ho raha hu change ❤️<br>
+      please baat karte hai 🥺  
+      <br><br>
+      (warna sad reels dekhunga 😭)
+    </p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<script>
+function openEnvelope(){
+  document.querySelector(".envelope").classList.toggle("open");
+}
+
+function showPopup(){
+  document.getElementById("popup").style.display="flex";
+}
+
+function closePopup(){
+  document.getElementById("popup").style.display="none";
+}
+
+function funnyHover(btn){
+  btn.innerText="Aabhi bhi ghussa hu 😒";
+
+  let x=Math.random()*60-30;
+  let y=Math.random()*40-20;
+
+  btn.style.transform=`translate(${x}px, ${y}px)`;
+}
+</script>
+
+</body>
+</html>
